@@ -1,0 +1,29 @@
+/* component */
+@import url(../components/footer.css);
+@import url(../components/nav.css);
+@import url(../components/font.css);
+
+/* page */
+@import url(../page/movie-list.css);
+
+
+.movie-list .list-cont{ width: 80%; }
+
+
+.review-input { width: 100%; background-color: #e9ecef;  padding: 20px; box-sizing: border-box; border-radius: 7px; margin: 0 auto 20px; }
+.review-input p { margin-bottom: 0;}
+.review-input span { margin-right: 15px; font-size: 18px; }
+.review-input .input-name { margin-bottom: 15px;}
+.review-input .input-name input { width: 50%; height: 45px; border-radius: 7px; border: gray 1px solid; padding: 5px 15px; box-sizing: border-box; }
+.review-input .input-name input:placeholder-shown { color: #e9ecef; font-weight: 400;}
+.review-input .input-text { display: flex;  align-items: center; white-space : pre;}
+.review-input .input-text textarea { width: 100%; height: 110px; border-radius: 7px; margin-right: 15px;}
+.review-input .input-text button { height: 110px; padding: 5px 30px; box-sizing: border-box; border-radius: 7px; background-color: white; border: gray 1px solid; }
+
+.review-show { width: 90%; margin: 0 auto; }
+.review-show p { margin: 0; }
+.review-show .review-box { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: #dedfe0 1px solid; padding: 20px 0; }
+.review-show .review-box .show-name { width: 10%; text-align: center;  padding-top: 10px;}
+.review-show .review-box .show-text { width: 80%;  }
+.review-show .review-box .review-show-del { width: 8%; margin-top: 10px; border-radius: 7px; background-color: #e9ecef; border: gray 1px solid; padding: 5px 15px;  }
+

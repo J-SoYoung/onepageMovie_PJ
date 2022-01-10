@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Bootstrap_CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!-- Bootstrap_JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<!-- 기본CSS -->
+    <link rel="stylesheet" href="../static/css/page/movie-search.css">
+    <!--    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet" >-->
+</head>
+<body>
+    <nav>
+        <div class="main-nav">
+            <a href="/"><i class="fas fa-film"></i> 병아리 MOVIE</a>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="{{url_for('movielist')}}" >현재 상영작</a></li>
+                <li><a href="{{url_for('movielist')}}">순위</a></li>
+            </ul>
+            <a href="{{url_for('myMovie')}}"><i class="fas fa-sign-in-alt"></i> mypage</a>
+        </div>
+    </nav>
+    <form class="movie-search">
+        <input type="text" class="m-searchBar" placeholder="어떤 영화를 검색하시겠어요?">
+        <button><i class="fas fa-search"></i></button>
+    </form>
+
+
+    <div class="movie-box">
+        <p class="movie-box-title">검색 결과 페이지</p>
+        <div class="movie-listBox">
+            <div class="movie-list">
+                <a class="list-img" href="#" ><img src="https://movie-phinf.pstatic.net/20211116_218/1637044152743qvvAG_JPEG/movie_image.jpg?type=m203_290_2"></a>
+                <div class="list-cont">
+                    <div class="movie-name">
+                        <span class="movie-age">15</span><span class="movie-tit">유체이탈자</span>
+                    </div>
+                    <div class="summary">
+                        <span class="title">개요</span><span class="text">액션</span>
+                    </div>
+                    <div class="director">
+                        <span class="title">감독</span><span class="text">윤재근</span>
+                    </div>
+                    <div class="actor">
+                        <span class="title">출연</span><span class="text">윤계상,박용우,임지연</span>
+                    </div>
+                    <div class="contents">
+                        <span class="title">줄거리</span>
+                        <p class="text">“누가 진짜 나인지 모르겠어요” 교통사고 현장에서 눈을 뜬 한 남자. 거울에 비친 낯선 얼굴과 이름, 자신이 누구인지 기억이 나지 않는다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="review-input">
+            <p class="input-name">
+                <span>작성자</span>
+                <input class="input-name-cont" type="text" placeholder="작성자">
+            </p>
+            <p class="input-text">
+                <span>내     용</span>
+                <textarea class="input-text-cont"></textarea>
+                <button class="review-input-save">저장</button>
+            </p>
+        </form>
+        <div class="review-show">
+            <div class="review-box">
+                <p class="show-name">정소영</p>
+                <p class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias sequi maiores repudiandae, corporis aliquam enim quae vel eligendi facilis odit saepe iusto. </p>
+                <button class="review-show-del">삭제</button>
+            </div>
+            <div class="review-box">
+                <p class="show-name">정소영</p>
+                <p class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias sequi maiores repudiandae, corporis aliquam enim quae vel eligendi facilis odit saepe iusto. </p>
+                <button class="review-show-del">삭제</button>
+            </div>
+            <div class="review-box">
+                <p class="show-name">정소영</p>
+                <p class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias sequi maiores repudiandae, corporis aliquam enim quae vel eligendi facilis odit saepe iusto. </p>
+                <button class="review-show-del">삭제</button>
+            </div>
+            <div class="review-box">
+                <p class="show-name">정소영</p>
+                <p class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias sequi
+                    maiores repudiandae, corporis aliquam enim quae vel eligendi facilis odit saepe iusto. </p>
+                <button class="review-show-del">삭제</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-box">
+            <div class="footer-minibox">
+                <p class="footer-tit">햇병아리 개발자도전하다</p>
+                <div class="footer-icon">
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fas fa-comment-dots"></i>
+                    <i class="fab fa-amilia"></i>
+                </div>
+            </div>
+            <p class="footer-person">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">개발자 정보 보기<i class="fas fa-chevron-down"></i>
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body footer-content">
+                    <div class="footer-text">
+                        <p class="name">문병민</p>
+                        <p class="hobby">Backend - Java, Spring</p>
+                        <a class="blog" href="https://www.notion.so/c5cd3a39f0b54a8ca73d330a81e97f95" target="_blank">블로그</a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="name">정소영</p>
+                        <p class="hobby">frontend - React.js </p>
+                        <a class="blog" href="https://thdud4479.tistory.com/" target="_blank">블로그</a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="name">신지훈</p>
+                        <p class="hobby">frontend - React.js </p>
+                        <a class="blog" href="https://velog.io/@rmfos82/series/" target="_blank">블로그</a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="name">서예지</p>
+                        <p class="hobby">주특기 : </p>
+                        <a class="blog" href="https://yejiyeji95.tistory.com/" target="_blank">블로그</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2021 햇병아리 개발공부 <i class="fas fa-dove"></i> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

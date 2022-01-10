@@ -1,0 +1,9 @@
+.review-input { width: 100%; background-color: #e9ecef;  padding: 20px; box-sizing: border-box; border-radius: 7px; margin: 0 auto 20px; }
+.review-input p { margin-bottom: 0;}
+.review-input span { margin-right: 15px; font-size: 18px; }
+.review-input .input-name { margin-bottom: 15px;}
+.review-input .input-name input { width: 50%; height: 45px; border-radius: 7px; border: gray 1px solid; padding: 5px 15px; box-sizing: border-box; }
+.review-input .input-name input:placeholder-shown { color: #e9ecef; font-weight: 400;}
+.review-input .input-text { display: flex;  align-items: center; white-space : pre;}
+.review-input .input-text textarea { width: 100%; height: 110px; border-radius: 7px; margin-right: 15px; padding-right: 15px; box-sizing: border-box}
+.review-input .input-text button { height: 110px; padding: 5px 30px; box-sizing: border-box; border-radius: 7px; background-color: white; border: gray 1px solid; }

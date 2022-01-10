@@ -1,0 +1,9 @@
+
+.movie-search{ width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px 0; box-sizing: border-box; border: 10px solid #064635; border-radius: 10px; margin-bottom: 25px;}
+.movie-search img:first-child { width: 120px; margin-right: 10px; }
+.movie-search img:last-child { width: 250px;}
+.movie-search input.searchBar { width: 420px; height: 45px; border: none; border-bottom: 3px solid #064635; padding-left: 15px; box-sizing: border-box}
+.movie-search input.searchBar:placeholder-shown { text-align: center; box-sizing: border-box; }
+.movie-search button { border: none; background: white; padding: 5px; box-sizing: border-box; }
+.movie-search button:focus { border: none; outline: none; }
+

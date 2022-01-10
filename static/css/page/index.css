@@ -1,0 +1,177 @@
+/* component */
+@import url(../components/footer.css);
+@import url(../components/nav.css);
+@import url(../components/font.css);
+@import url(../components/search-bar.css);
+@import url(../components/listbox.css);
+
+
+.main-movieBox {
+    width: 900px; margin: 0 auto;
+}
+.main-bg {
+    height: 150px; width: 100%;
+    display: flex; justify-content: center
+}
+.main-bg img {
+    height: 150px;
+}
+
+
+.movie-title {
+    width: 200px; height: 40px;
+    font-size: 20px; font-weight: 600;
+    line-height: 40px; text-align: center;
+    color: white;
+    box-sizing: border-box;
+    background-color: #064635;
+    border-radius: 5px;
+}
+.movie-title i {
+    margin-right: 5px;
+}
+.movie-content {
+    margin-bottom: 10px
+}
+.movie-content .cardBox {
+    display: flex;
+    justify-content: space-between; align-items: center;
+    width: 100%; height: 220px;
+    margin-top: 10px;
+    border: 1px solid #e1dede;
+}
+.movie-content .card {
+    width: 13%; height: 220px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center; border: none;
+}
+.movie-content .card img {
+    width: 100%; height: 150px;
+}
+.movie-content .card span {
+    margin: 10px auto;
+    display: inline-block;
+}
+.movie-current .cardBox sapn {
+    width: 100%; height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.movie-rank-titBtn button{
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    padding: 3px 10px; box-sizing: border-box;
+    margin-right: 10px;
+}
+.movie-rank-titBtn button:focus {
+    border: none;
+}
+.movie-rank .cardBox sapn {
+    width: 100%; height: 100px;
+    display: inline-block;
+}
+.movie-list .list-cont{
+    width: 80%;
+}
+
+
+.review-input {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 3px solid #064635;
+    border-radius: 10px;
+    padding: 20px; box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+.review-input .input-search {
+    width: 20%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-input .input-search a {
+    height: 200px; width: 130px;
+    display: flex;
+    justify-content: center;
+}
+.review-input .input-search img {
+    width: 100%; height: 100%;
+}
+.review-input .input-search p {
+    display: inline-block;
+    margin: 0;
+    width: 100%; height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all
+}
+.review-input .input-text {
+    width: 80%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.review-input .input-text textarea{
+    width: 90%; height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-right: 15px
+}
+.review-input .input-text button {
+    height: 180px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-sizing: border-box; border-radius: 5px;
+}
+
+
+.review-show {
+    width: 90%; margin: 0 auto;
+}
+.review-show p {
+    margin: 0;
+}
+.review-show .review-box {
+    width: 100%; height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: #dedfe0 1px solid;
+    padding: 15px 0; box-sizing: border-box;
+}
+.review-show .review-box img {
+    border: 1px solid blueviolet;
+    width: 120px; height: 100%;
+    margin-right: 15px;
+}
+.review-show .review-box  .show-textBox {
+    margin-right: 15px; width: 80%;
+}
+.review-show .review-box .show-title {
+    width: 100%; height: 30px;
+    line-height: 30px;
+    overflow: hidden; text-overflow: ellipsis;
+    white-space: nowrap; word-break:break-all;
+}
+.review-show .review-box .show-comment {
+    width: 100%;
+}
+.review-show .review-box .review-del {
+    width: 50px; border-radius: 7px;
+    background-color: #e9ecef;
+    border: gray 1px solid;
+    text-align: center;
+    padding: 5px; box-sizing: border-box;
+}
+

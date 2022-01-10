@@ -1,0 +1,15 @@
+/* component */
+@import url(../components/footer.css);
+@import url(../components/nav.css);
+@import url(../components/font.css);
+@import url(../components/listbox.css);
+
+/* page */
+@import url(../page/index.css);
+
+
+.movie-search{ padding: 50px 0;}
+
+.movie-box { width: 900px; margin: 0 auto; }
+.movie-box .movie-box-title { font-size: 20px; font-weight: 600; box-sizing: border-box; background-color: #e9ecef ; border-radius: 5px; width: 200px; height: 40px; line-height: 40px; text-align: center; display: inline-block;  }
+
